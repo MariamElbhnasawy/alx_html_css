@@ -1,0 +1,53 @@
+body {
+    display: flex; /* تفعيل Flexbox */
+    flex-direction: column; /* ترتيب الحاويات عموديًا */
+    margin: 0; /* إزالة الحواف الافتراضية */
+    height: 100vh; /* ملء الشاشة بالكامل */
+}
+
+/* إعداد الرأس (Header) */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+/* إعداد الحاوية الرئيسية (Main) */
+main {
+    display: flex; /* تفعيل Flexbox */
+    flex-direction: row; /* ترتيب الحاويات أفقيًا */
+    flex: auto; /* السماح للحاوية بالتمدد تلقائيًا */
+}
+
+/* إعداد المقالة (Article) */
+article {
+    flex: 2; /* تأخذ ثلثي العرض */
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto; /* تمكين التمرير العمودي */
+}
+
+/* إعداد العنصر الجانبي (Aside) */
+aside {
+    flex: 1; /* تأخذ الثلث المتبقي من العرض */
+    background-color: #e0e0e0;
+    padding: 20px;
+    overflow-y: auto; /* تمكين التمرير العمودي */
+}
+
+/* إعداد التذييل (Footer) */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+a{
+    color:red;
+}
+a{
+    direction: none;
+}
